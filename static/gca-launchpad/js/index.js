@@ -1,6 +1,7 @@
 $(function() {
 	// WARNING: Trailing slash issues?
-	var datasource = $SCRIPT_ROOT + "{f}.json";
+	console.log(window.location['origin']);
+	var datasource = window.location['origin'] + "/static/data/can-live/{f}.json";
 
 	var reports = {
 		"report_names": [

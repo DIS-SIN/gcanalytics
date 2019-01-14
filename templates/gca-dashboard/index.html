@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-    <link rel="stylesheet" href="{{url_for('static', filename='gca-dashboard/css/public_analytics.css'}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='gca-dashboard/css/public_analytics.css')}}">
 
     <!-- <meta name="twitter:site" content="@usgsa"> -->
     <!-- <meta name="twitter:creator" content="@usgsa"> -->
@@ -24,7 +24,7 @@
     <!-- <meta name="twitter:card" content="summary_large_image"> -->
     <!-- <meta property="og:image" content="https://analytics.usa.gov/images/share-image.png" /> -->
 
-    <!-- 
+    <!--
     To generate image or pdf of the dashboard from the shell you can do the following:
     wkhtmltopdf -s "Letter" -O "Portrait" http://localhost:8000/gcanalytics/gca-dashboard/ gcanalytics.pdf
     wkhtmltoimage http://localhost:8000/gcanalytics/gca-dashboard/ gcanalytics.png
@@ -35,8 +35,8 @@
     <!--[if lte IE 9]>
     <script src="js/vendor/aight.v2.min.js"></script>
     <![endif]-->
-    <script src="{{url_for('static', filename='gca-dashboard/js/vendor/d3.v3.min.js'}}"></script>
-    <script src="{{url_for('static', filename='gca-dashboard/js/vendor/q.min.js'}}"></script>
+    <script src="{{url_for('static', filename='gca-dashboard/js/vendor/d3.v3.min.js')}}"></script>
+    <script src="{{url_for('static', filename='gca-dashboard/js/vendor/q.min.js')}}"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
@@ -107,7 +107,7 @@
         <section id="sections-en" class="two_column">
         <figure class="top-pages" id="sections-en" role="tabpanel"
           data-block="sections-en"
-          data-source="{{url_for('static', filename='data/can-live/sections-en.json')}}"        
+          data-source="{{url_for('static', filename='data/can-live/sections-en.json')}}"
           data-refresh="15">
           <h5><strong>English Sections</strong><br/>
           <em>Most viewed English sections</em></h5>
@@ -231,7 +231,7 @@
             </div>
           </figure>
         </section>
-        
+
 
         <section class="section_headline">
           <h3>Videos</h3>
@@ -279,7 +279,7 @@
 
         <section id="secondary_data_intro">
           <h3>Visitor Locations</h3>
-          <h5><em>These charts provide a quick snapshot of where Canadians (and others!) are visiting from.</em></h5> 
+          <h5><em>These charts provide a quick snapshot of where Canadians (and others!) are visiting from.</em></h5>
         </section>
         <section id="top_100_table">
 
@@ -288,7 +288,7 @@
             <li><a role="tab" href="#visitor-location-region">By Region</a></li>
             <li><a role="tab" href="#visitor-location-country">By Country</a></li>
           </ul>
-        
+
           <!-- see: http://heydonworks.com/practical_aria_examples/ -->
 
           <figure class="top-pages" id="visitor-location-city" role="tabpanel"
@@ -320,7 +320,7 @@
             <div class="data bar-chart">
             </div>
           </figure>
-          
+
         </section>
       </div>
 
@@ -332,29 +332,29 @@
         </p>
 
         <ul>
-          <li><a href="{{url_for('static', filename='data/can-live/departments-en.json}}">Departments (English)</a></li>
-          <li><a href="{{url_for('static', filename='data/can-live/departments-fr.json}}">Departments (French)</a></li>
-          <li><a href="{{url_for('static', filename='data/can-live/downloads-en.json}}">Downloads (English)</a></li>
-          <li><a href="{{url_for('static', filename='data/can-live/downloads-fr.json}}">Downloads (French)</a></li>
-          <li><a href="{{url_for('static', filename='data/can-live/mobileusers.json}}">Mobile users metric</a></li>
-          <li><a href="{{url_for('static', filename='data/can-live/news-en.json}}">News (English)</a></li>
-          <li><a href="{{url_for('static', filename='data/can-live/news-fr.json}}">News (French)</a></li>
-          <li><a href="{{url_for('static', filename='data/can-live/pages-en.json}}">Pages (English)</a></li>
-          <li><a href="{{url_for('static', filename='data/can-live/pages-fr.json}}">Pages (French)</a></li>
-          <li><a href="{{url_for('static', filename='data/can-live/pageviews.json}}">Page view metric</a></li>
-          <li><a href="{{url_for('static', filename='data/can-live/sections-en.json}}">Sections (English)</a></li>
-          <li><a href="{{url_for('static', filename='data/can-live/sections-fr.json}}">Sections (French)</a></li>
-          <li><a href="{{url_for('static', filename='data/can-live/snapshot.json}}">Visits metric</a></li>
-          <li><a href="{{url_for('static', filename='data/can-live/videos-en.json}}">Videos (English)</a></li>
-          <li><a href="{{url_for('static', filename='data/can-live/videos-fr.json}}">Videos (French)</a></li>
-          <li><a href="{{url_for('static', filename='data/can-live/visitor-location-city.json}}">Visitors by City</a></li>
-          <li><a href="{{url_for('static', filename='data/can-live/visitor-location-country.json}}">Visitors by Country</a></li>
-          <li><a href="{{url_for('static', filename='data/can-live/visitor-location-region.json}}">Visitors by Region</a></li>
-          <li><a href="{{url_for('static', filename='data/can-live/visits.json}}">Visits in the last 30 days</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/departments-en.json')}}">Departments (English)</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/departments-fr.json')}}">Departments (French)</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/downloads-en.json')}}">Downloads (English)</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/downloads-fr.json')}}">Downloads (French)</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/mobileusers.json')}}">Mobile users metric</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/news-en.json')}}">News (English)</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/news-fr.json')}}">News (French)</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/pages-en.json')}}">Pages (English)</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/pages-fr.json')}}">Pages (French)</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/pageviews.json')}}">Page view metric</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/sections-en.json')}}">Sections (English)</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/sections-fr.json')}}">Sections (French)</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/snapshot.json')}}">Visits metric</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/videos-en.json')}}">Videos (English)</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/videos-fr.json')}}">Videos (French)</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/visitor-location-city.json')}}">Visitors by City</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/visitor-location-country.json')}}">Visitors by Country</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/visitor-location-region.json')}}">Visitors by Region</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/visits.json')}}">Visits in the last 30 days</a></li>
         </ul>
         <h3>Websites included in this data</h3>
         <p>
-          Not every Government of Canada website is represented in this data. The data includes web traffic from the following websites that use the Government of Canada’s web analytics tool: 
+          Not every Government of Canada website is represented in this data. The data includes web traffic from the following websites that use the Government of Canada’s web analytics tool:
         </p>
         <ul>
           <li><a href="http://canada.ca">Canada.ca</a></li>
@@ -380,7 +380,7 @@
       <section class="three_column">
         <h3>How we make it better</h3>
         <p>
-          This data is one a small part of our web traffic. We need more trackers on more pages to make the data better! So if you are up to it <a href="{{url_for('gca-dashboard.get-involved'}}">get involved</a>. We want to get one amazing dataset and dashboard so we can give Canadians the content they want.
+          This data is one a small part of our web traffic. We need more trackers on more pages to make the data better! So if you are up to it <a href="{{url_for('gca-dashboard.render_get_involved')}}">get involved</a>. We want to get one amazing dataset and dashboard so we can give Canadians the content they want.
         </p>
       </section>
     </div>
@@ -406,7 +406,7 @@
     window._ie = window._ie9 || window._ie10 || window._ie11;
   </script>
 
-  <script src="{{url_for('static', filename='gca-dashboard/js/index.js}}"></script>
+  <script src="{{url_for('static', filename='gca-dashboard/js/index.js')}}"></script>
 
   <!-- This is all it takes to report an agency's traffic to the DAP. -->
   <!-- <script id="_fed_an_ua_tag" src="https://analytics.usa.gov/dap/dap.min.js"></script>-->

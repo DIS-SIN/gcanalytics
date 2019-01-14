@@ -9,7 +9,7 @@
 
 <!-- Metro 4 -->
 <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
-<link rel="stylesheet" href="{{url_for('static', filename='gca-launchpad/css/gca-launchpad.css'}}">
+<link rel="stylesheet" href="{{url_for('static', filename='gca-launchpad/css/gca-launchpad.css')}}">
 </head>
 <body>
 
@@ -76,7 +76,7 @@
 <!-- jQuery first, then Metro UI JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
-<script src="{{url_for('static', filename='gca-launchpad/js/index.js'}}"></script>
+<script src="{{url_for('static', filename='gca-launchpad/js/index.js')}}"></script>
 </body>
 <script type="text/javascript">
     $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
