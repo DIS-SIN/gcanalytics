@@ -1,0 +1,62 @@
+{
+   "data": [
+      {
+         "active_visitors": "6.78",
+         "city": "Toronto (Ontario, Canada)"
+      },
+      {
+         "active_visitors": "4.42",
+         "city": "Montreal (Quebec, Canada)"
+      },
+      {
+         "active_visitors": "3.87",
+         "city": "Ottawa (Ontario, Canada)"
+      },
+      {
+         "active_visitors": "3.22",
+         "city": "Calgary (Alberta, Canada)"
+      },
+      {
+         "active_visitors": "2.82",
+         "city": "Edmonton (Alberta, Canada)"
+      },
+      {
+         "active_visitors": "2.78",
+         "city": "Vancouver (British Columbia, Canada)"
+      },
+      {
+         "active_visitors": "1.90",
+         "city": "Winnipeg (Manitoba, Canada)"
+      },
+      {
+         "active_visitors": "1.47",
+         "city": "Mississauga (Ontario, Canada)"
+      },
+      {
+         "active_visitors": "1.45",
+         "city": "Brampton (Ontario, Canada)"
+      },
+      {
+         "active_visitors": "1.44",
+         "city": "North York (Ontario, Canada)"
+      }
+   ],
+   "meta": {
+      "description": "Chart that displays By city  measured from tracker data",
+      "name": "By city "
+   },
+   "name": "visitor-location-city",
+   "query": {
+      "dimensions": "rt:city",
+      "max-results": 20,
+      "metrics": [
+         "rt:activeUsers"
+      ],
+      "sort": [
+         "-rt:activeUsers"
+      ]
+   },
+   "sampling": {},
+   "taken_at": "2019-01-13 02:33:32.381885",
+   "totals": {}
+}

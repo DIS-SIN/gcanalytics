@@ -1,0 +1,28 @@
+{
+  "name": "visits",
+  "sampling": {
+    "containsSampledData": false
+  },
+  "query": {
+    "start-date": "2018-01-01",
+    "end-date": "2019-01-01",
+    "dimensions": "ga:date",
+    "metrics": [
+      "ga:sessions"
+    ],
+    "start-index": 1,
+    "max-results": 10000,
+    "samplingLevel": "HIGHER_PRECISION"
+  },
+   "meta": {
+      "description": "Chart that displays  Visits measured from tracker data",
+      "name": " Visits"
+   },
+  "data": [
+      {
+         "visits": 0,
+         "hour": "00",
+         "date": "2019-01-01"
+      }
+    ]
+}

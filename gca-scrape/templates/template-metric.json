@@ -1,0 +1,21 @@
+{
+  "name": "report-block-name",
+  "sampling": {},
+  "query": {
+    "metrics": [
+      "rt:activeUsers"
+    ],
+    "max-results": 10000
+  },
+  "meta": {
+    "name": "Chart name",
+    "description": "Chart description"
+  },
+  "data": [
+    {
+      "active_visitors": 100.00
+    }
+  ],
+  "totals": {},
+  "taken_at": "2019-01-01 00:00:00.000000"
+}

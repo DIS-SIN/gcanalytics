@@ -1,0 +1,62 @@
+{
+   "data": [
+      {
+         "active_visitors": 10766453,
+         "page_title": "Immigration, Refugees and Citizenship Canada"
+      },
+      {
+         "active_visitors": 7792202,
+         "page_title": "Canada Revenue Agency"
+      },
+      {
+         "active_visitors": 7594149,
+         "page_title": "Employment and Social Development Canada"
+      },
+      {
+         "active_visitors": 3995507,
+         "page_title": "Service Canada"
+      },
+      {
+         "active_visitors": 3483939,
+         "page_title": "Government of Canada; Immigration, Refugees and Citizenship Canada"
+      },
+      {
+         "active_visitors": 1063747,
+         "page_title": "Health Canada"
+      },
+      {
+         "active_visitors": 875532,
+         "page_title": "Government of Canada, Statistics Canada"
+      },
+      {
+         "active_visitors": 407187,
+         "page_title": "National Defence"
+      },
+      {
+         "active_visitors": 385646,
+         "page_title": "Environment and Climate Change Canada"
+      },
+      {
+         "active_visitors": 380207,
+         "page_title": "Treasury Board of Canada Secretariat"
+      }
+   ],
+   "meta": {
+      "description": "Chart that displays Most visited departments (Visits to English content) measured from tracker data",
+      "name": "Most visited departments (Visits to English content)"
+   },
+   "name": "departments-en",
+   "query": {
+      "dimensions": "rt:pageTitle",
+      "max-results": 20,
+      "metrics": [
+         "rt:activeUsers"
+      ],
+      "sort": [
+         "-rt:activeUsers"
+      ]
+   },
+   "sampling": {},
+   "taken_at": "2019-01-13 02:33:32.055950",
+   "totals": {}
+}

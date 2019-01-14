@@ -1,0 +1,26 @@
+{
+  "name": "report-block-name",
+  "sampling": {},
+  "query": {
+    "dimensions": "rt:place",
+    "metrics": [
+      "rt:activeUsers"
+    ],
+    "sort": [
+      "-rt:activeUsers"
+    ],
+    "max-results": 20
+  },
+  "meta": {
+    "name": "Chart name",
+    "description": "Chart description"
+  },
+  "data": [
+    {
+      "place": "Place name",
+      "active_visitors": "100.00"
+    }
+  ],
+  "totals": {},
+  "taken_at": "2019-01-01 00:00:00.000000"
+}

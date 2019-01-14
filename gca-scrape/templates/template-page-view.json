@@ -1,0 +1,26 @@
+{
+   "data":[  
+      {
+         "active_visitors": 0,
+         "page_title": "Page title"
+      }
+   ],
+   "meta": {
+      "description": "Chart description",
+      "name": "Chart name"
+   },
+   "name": "report-block-name",
+   "query": {
+      "dimensions": "rt:pageTitle",
+      "max-results": 20,
+      "metrics": [
+         "rt:activeUsers"
+      ],
+      "sort": [
+         "-rt:activeUsers"
+      ]
+   },
+   "sampling": {},
+   "taken_at": "2019-01-01 00:00:00.000000",
+   "totals": {}
+}
