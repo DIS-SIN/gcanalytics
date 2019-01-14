@@ -1,4 +1,4 @@
-## Canada.ca Analytics Experimental Dashboard
+## Canada.ca Analytics <b>Experimental/Prototype</b> Dashboard
 
 A collaborationby CSPS-DIS to create a sweet government website analytics dashboard using hockey sticks and pucks that were nearby.
 
