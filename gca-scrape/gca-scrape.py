@@ -28,7 +28,7 @@ locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
 # its enough to build us the files we need. As a plus when were done
 # and we end up asking, we have some real specs we can work with
 url = 'https://www.canada.ca/en/analytics.html'
-output_folder = "../gca-dashboard/demo/data/can-live/"
+output_folder = "../static/data/can-live/"
 # grab the html
 print(f"* url: {url}")
 page = requests.get(url)
