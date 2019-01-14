@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title>gca-launchpad | The Canadian government's web traffic driven dynamic launchpad.</title>
+
+<!-- Metro 4 -->
+<link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
+<link rel="stylesheet" href="{{url_for('static', filename='gca-launchpad/css/gca-launchpad.css'}}">
+</head>
+<body>
+
+<div class="container">
+    <h1>gca-launchpad | <a class="splash_link" href="http://www.canada.ca">canada.ca</a><span>a dynamic web traffic driven dashboard <strong>built from what Canadians are accessing the most</strong></span></h1>
+</div>
+
+<div class="tiles-grid container" id="tileview">
+
+	<div data-size="small" data-role="tile"><span class="mif-anchor icon"></span></div>
+	<div data-size="medium" data-role="tile"><span class="mif-home icon"></span></div>
+	<div data-size="wide" data-role="tile"><span class="mif-battery-full icon"></span></div>
+	<div data-size="large" data-role="tile"><span class="mif-github icon"></span></div>
+
+	<div data-role="tile">
+	    <span class="branding-bar">Branding bar</span>
+	</div>
+
+	<div data-role="tile">
+	    <span class="badge-top">10</span>
+	</div>
+	<div data-role="tile">
+	    <span class="badge-bottom">10</span>
+	</div>
+
+	<div data-role="tile" data-effect="animate-slide-up">
+	    <div class="slide"><h1 class="pos-absolute pos-center">1</h1></div>
+	    <div class="slide"><h1 class="pos-absolute pos-center">2</h1></div>
+	    <div class="slide"><h1 class="pos-absolute pos-center">3</h1></div>
+	    <div class="slide"><h1 class="pos-absolute pos-center">4</h1></div>
+	    <div class="slide"><h1 class="pos-absolute pos-center">5</h1></div>
+	</div>
+    <a href="https://github.com/olton/Metro-UI-CSS" data-role="tile" class="bg-indigo">
+        <span class="mif-github icon"></span>
+        <span class="branding-bar">Github</span>
+        <span class="badge-bottom">30</span>
+    </a>
+    <div data-role="tile" class="bg-cyan">
+        <span class="mif-envelop icon"></span>
+        <span class="branding-bar">Email</span>
+        <span class="badge-bottom">10</span>
+    </div>
+    <div data-role="tile" class="bg-red" data-size="wide">
+        <span class="mif-chrome icon"></span>
+        <span class="branding-bar">Chrome</span>
+    </div>
+    <div data-role="tile" data-size="small">
+        <span class="mif-apple icon"></span>
+    </div>
+    <div data-role="tile" data-size="small" class="bg-red">
+        <span class="mif-bell icon"></span>
+    </div>
+    <div data-role="tile" data-size="small" class="bg-teal col-1 row-6">
+        <span class="mif-windows icon"></span>
+    </div>
+    <div data-role="tile" data-size="small" class="bg-brown col-2 row-6">
+        <span class="mif-wind icon"></span>
+    </div>
+    <div data-role="tile" class="bg-cyan">
+        <span class="mif-table icon"></span>
+        <span class="branding-bar">Tables</span>
+    </div>
+</div>
+<!-- jQuery first, then Metro UI JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
+<script src="{{url_for('static', filename='gca-launchpad/js/index.js'}}"></script>
+</body>
+<script type="text/javascript">
+    $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+</script>
+</html>

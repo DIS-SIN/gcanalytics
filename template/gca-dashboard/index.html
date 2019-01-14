@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-    <link rel="stylesheet" href="../css/public_analytics.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='gca-dashboard/css/public_analytics.css'}}">
 
     <!-- <meta name="twitter:site" content="@usgsa"> -->
     <!-- <meta name="twitter:creator" content="@usgsa"> -->
@@ -26,8 +26,8 @@
 
     <!-- 
     To generate image or pdf of the dashboard from the shell you can do the following:
-    wkhtmltopdf -s "Letter" -O "Portrait" http://localhost:8000/gcanalytics/gca-dashboard/demo/ gcanalytics.pdf
-    wkhtmltoimage http://localhost:8000/gcanalytics/gca-dashboard/demo/ gcanalytics.png
+    wkhtmltopdf -s "Letter" -O "Portrait" http://localhost:8000/gcanalytics/gca-dashboard/ gcanalytics.pdf
+    wkhtmltoimage http://localhost:8000/gcanalytics/gca-dashboard/ gcanalytics.png
 
     Online readme.md quick view https://dillinger.io/
     -->
@@ -35,8 +35,8 @@
     <!--[if lte IE 9]>
     <script src="js/vendor/aight.v2.min.js"></script>
     <![endif]-->
-    <script src="../js/vendor/d3.v3.min.js"></script>
-    <script src="../js/vendor/q.min.js"></script>
+    <script src="{{url_for('static', filename='gca-dashboard/js/vendor/d3.v3.min.js'}}"></script>
+    <script src="{{url_for('static', filename='gca-dashboard/js/vendor/q.min.js'}}"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
@@ -74,10 +74,11 @@
 
       </section>
       -->
-
+      <!--- data-source="http://localhost:8000/gcanalytics/gca-dashboard/data/can-live/snapshot.json"
+        --->
       <section id="snapshot" class="one_column"
         data-block="snapshot"
-        data-source="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/snapshot.json"
+        data-source="{{url_for('static', filename='data/can-live/snapshot.json')}}"
         data-refresh="15">
         <h2 id="current_visitors" class="data">...</h2>
         <div class="chart_subtitle">visits to Government of Canada websites</div>
@@ -90,7 +91,7 @@
         </section>
         <section id="time_series"
           data-block="visits"
-          data-source="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/visits.json"
+          data-source="{{url_for('static', filename='data/can-live/visits.json')}}"
           data-refresh="60">
           <svg class="data time-series">
           </svg>
@@ -106,7 +107,7 @@
         <section id="sections-en" class="two_column">
         <figure class="top-pages" id="sections-en" role="tabpanel"
           data-block="sections-en"
-          data-source="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/sections-en.json"
+          data-source="{{url_for('static', filename='data/can-live/sections-en.json')}}"        
           data-refresh="15">
           <h5><strong>English Sections</strong><br/>
           <em>Most viewed English sections</em></h5>
@@ -117,7 +118,7 @@
         <section id="sections-fr" class="two_column">
           <figure class="top-pages" id="sections-fr" role="tabpanel"
             data-block="sections-fr"
-            data-source="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/sections-fr.json"
+            data-source="{{url_for('static', filename='data/can-live/sections-fr.json')}}"
             data-refresh="15">
             <h5><strong>French Sections</strong><br/>
             <em>Most viewed French sections</em></h5>
@@ -133,7 +134,7 @@
         <section id="departments-en" class="two_column">
         <figure class="top-pages" id="departments-en" role="tabpanel"
           data-block="departments-en"
-          data-source="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/departments-en.json"
+          data-source="{{url_for('static', filename='data/can-live/departments-en.json')}}"
           data-refresh="15">
           <h5><strong>English department content</strong><br/>
           <em>Most viewed English department</em></h5>
@@ -144,7 +145,7 @@
         <section id="departments-fr" class="two_column">
           <figure class="top-pages" id="departments-fr" role="tabpanel"
             data-block="departments-fr"
-            data-source="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/departments-fr.json"
+            data-source="{{url_for('static', filename='data/can-live/departments-fr.json')}}"
             data-refresh="15">
             <h5><strong>French department content</strong><br/>
             <em>Most viewed French department</em></h5>
@@ -159,7 +160,7 @@
         <section id="pages-en" class="two_column">
         <figure class="top-pages" id="pages-en" role="tabpanel"
           data-block="pages-en"
-          data-source="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/pages-en.json"
+          data-source="{{url_for('static', filename='data/can-live/pages-en.json')}}"
           data-refresh="15">
           <h5><strong>English Pages</strong><br/>
           <em>Most viewed English pages</em></h5>
@@ -170,7 +171,7 @@
         <section id="pages-fr" class="two_column">
           <figure class="top-pages" id="pages-fr" role="tabpanel"
             data-block="pages-fr"
-            data-source="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/pages-fr.json"
+            data-source="{{url_for('static', filename='data/can-live/pages-fr.json')}}"
             data-refresh="15">
             <h5><strong>French Pages</strong><br/>
             <em>Most viewed French pages</em></h5>
@@ -185,7 +186,7 @@
         <section id="news-en" class="two_column">
           <figure class="top-pages" id="news-en" role="tabpanel"
             data-block="news-en"
-            data-source="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/news-en.json"
+            data-source="{{url_for('static', filename='data/can-live/news-en.json')}}"
             data-refresh="15">
             <h5><strong>English News</strong><br/>
             <em>Most viewed English news articles</em></h5>
@@ -196,7 +197,7 @@
         <section id="news-fr" class="two_column">
           <figure class="top-pages" id="news-fr" role="tabpanel"
             data-block="news-fr"
-            data-source="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/news-fr.json"
+            data-source="{{url_for('static', filename='data/can-live/news-fr.json')}}"
             data-refresh="15">
             <h5><strong>French News</strong><br/>
             <em>Most viewed French news articles</em></h5>
@@ -211,7 +212,7 @@
         <section id="downloads-en" class="two_column">
           <figure class="top-pages" id="downloads-en" role="tabpanel"
             data-block="downloads-en"
-            data-source="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/downloads-en.json"
+            data-source="{{url_for('static', filename='data/can-live/downloads-en.json')}}"
             data-refresh="15">
             <h5><strong>English Downloads</strong><br/>
             <em>Most downloaded English assets</em></h5>
@@ -222,7 +223,7 @@
         <section id="downloads-fr" class="two_column">
           <figure class="top-pages" id="downloads-fr" role="tabpanel"
             data-block="downloads-fr"
-            data-source="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/downloads-fr.json"
+            data-source="{{url_for('static', filename='data/can-live/downloads-fr.json')}}"
             data-refresh="15">
             <h5><strong>French Downloads</strong><br/>
             <em>Most downloaded French assets</em></h5>
@@ -238,7 +239,7 @@
         <section id="videos-en" class="two_column">
           <figure class="top-pages" id="videos-en" role="tabpanel"
             data-block="videos-en"
-            data-source="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/videos-en.json"
+            data-source="{{url_for('static', filename='data/can-live/videos-en.json')}}"
             data-refresh="15">
             <h5><strong>English Videos</strong><br/>
             <em>Most played English videos</em></h5>
@@ -249,7 +250,7 @@
         <section id="videos-fr" class="two_column">
           <figure class="top-pages" id="videos-fr" role="tabpanel"
             data-block="downloads-fr"
-            data-source="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/videos-fr.json"
+            data-source="{{url_for('static', filename='data/can-live/videos-fr.json')}}"
             data-refresh="15">
             <h5><strong>French Videos</strong><br/>
             <em>Most played French videos</em></h5>
@@ -262,7 +263,7 @@
       <div id="secondary_data">
         <section id="pageviews" class="two_column"
           data-block="pageviews"
-          data-source="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/pageviews.json"
+          data-source="{{url_for('static', filename='data/can-live/pageviews.json')}}"
           data-refresh="15">
           <h3 id="current_visitors_pv" class="data">...</h3>
           <div class="chart_subtitle">Pages Viewed</div>
@@ -270,7 +271,7 @@
 
         <section id="mobileusers" class="two_column"
           data-block="mobileusers"
-          data-source="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/mobileusers.json"
+          data-source="{{url_for('static', filename='data/can-live/mobileusers.json')}}"
           data-refresh="15">
           <h3 id="current_visitors_mu" class="data">...</h3>
           <div class="chart_subtitle">Mobile Users</div>
@@ -292,8 +293,8 @@
 
           <figure class="top-pages" id="visitor-location-city" role="tabpanel"
             data-block="visitor-location-city"
-            data-source="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/visitor-location-city.json">
-            <!-- data-refresh="15"> -->
+            data-source="{{url_for('static', filename='data/can-live/visitor-location-city.json')}}"
+            data-refresh="15">
             <h5><strong>By City</strong><br/>
             <em>Visitor data by city</em></h5>
             <div class="data bar-chart">
@@ -302,7 +303,8 @@
 
           <figure class="top-pages" id="visitor-location-region" role="tabpanel"
             data-block="visitor-location-region"
-            data-source="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/visitor-location-region.json">
+            data-source="{{url_for('static', filename='data/can-live/visitor-location-region.json')}}"
+            data-refresh="15"
             <h5><strong>By Region</strong><br/>
             <em>Visitor data by region</em></h5>
             <div class="data bar-chart">
@@ -311,7 +313,8 @@
 
           <figure class="top-pages" id="visitor-location-country" role="tabpanel"
             data-block="visitor-location-country"
-            data-source="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/visitor-location-country.json">
+            data-source="{{url_for('static', filename='data/can-live/visitor-location-country.json')}}"
+            data-refresh="15">
             <h5><strong>By Country</strong><br/>
               <em>Visitor data by country</em></h5>
             <div class="data bar-chart">
@@ -329,25 +332,25 @@
         </p>
 
         <ul>
-          <li><a href="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/departments-en.json">Departments (English)</a></li>
-          <li><a href="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/departments-fr.json">Departments (French)</a></li>
-          <li><a href="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/downloads-en.json">Downloads (English)</a></li>
-          <li><a href="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/downloads-fr.json">Downloads (French)</a></li>
-          <li><a href="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/mobileusers.json">Mobile users metric</a></li>
-          <li><a href="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/news-en.json">News (English)</a></li>
-          <li><a href="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/news-fr.json">News (French)</a></li>
-          <li><a href="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/pages-en.json">Pages (English)</a></li>
-          <li><a href="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/pages-fr.json">Pages (French)</a></li>
-          <li><a href="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/pageviews.json">Page view metric</a></li>
-          <li><a href="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/sections-en.json">Sections (English)</a></li>
-          <li><a href="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/sections-fr.json">Sections (French)</a></li>
-          <li><a href="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/snapshot.json">Visits metric</a></li>
-          <li><a href="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/videos-en.json">Videos (English)</a></li>
-          <li><a href="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/videos-fr.json">Videos (French)</a></li>
-          <li><a href="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/visitor-location-city.json">Visitors by City</a></li>
-          <li><a href="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/visitor-location-country.json">Visitors by Country</a></li>
-          <li><a href="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/visitor-location-region.json">Visitors by Region</a></li>
-          <li><a href="http://localhost:8000/gcanalytics/gca-dashboard/demo/data/can-live/visits.json">Visits in the last 30 days</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/departments-en.json}}">Departments (English)</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/departments-fr.json}}">Departments (French)</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/downloads-en.json}}">Downloads (English)</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/downloads-fr.json}}">Downloads (French)</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/mobileusers.json}}">Mobile users metric</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/news-en.json}}">News (English)</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/news-fr.json}}">News (French)</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/pages-en.json}}">Pages (English)</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/pages-fr.json}}">Pages (French)</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/pageviews.json}}">Page view metric</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/sections-en.json}}">Sections (English)</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/sections-fr.json}}">Sections (French)</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/snapshot.json}}">Visits metric</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/videos-en.json}}">Videos (English)</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/videos-fr.json}}">Videos (French)</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/visitor-location-city.json}}">Visitors by City</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/visitor-location-country.json}}">Visitors by Country</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/visitor-location-region.json}}">Visitors by Region</a></li>
+          <li><a href="{{url_for('static', filename='data/can-live/visits.json}}">Visits in the last 30 days</a></li>
         </ul>
         <h3>Websites included in this data</h3>
         <p>
@@ -377,7 +380,7 @@
       <section class="three_column">
         <h3>How we make it better</h3>
         <p>
-          This data is one a small part of our web traffic. We need more trackers on more pages to make the data better! So if you are up to it <a href="http://localhost:8000/gcanalytics/gca-dashboard/demo/agencies/">get involved</a>. We want to get one amazing dataset and dashboard so we can give Canadians the content they want.
+          This data is one a small part of our web traffic. We need more trackers on more pages to make the data better! So if you are up to it <a href="{{url_for('gca-dashboard.get-involved'}}">get involved</a>. We want to get one amazing dataset and dashboard so we can give Canadians the content they want.
         </p>
       </section>
     </div>
@@ -403,7 +406,7 @@
     window._ie = window._ie9 || window._ie10 || window._ie11;
   </script>
 
-  <script src="../js/index.js"></script>
+  <script src="{{url_for('static', filename='gca-dashboard/js/index.js}}"></script>
 
   <!-- This is all it takes to report an agency's traffic to the DAP. -->
   <!-- <script id="_fed_an_ua_tag" src="https://analytics.usa.gov/dap/dap.min.js"></script>-->
