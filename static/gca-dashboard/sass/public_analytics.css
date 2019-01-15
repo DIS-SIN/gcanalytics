@@ -37,6 +37,11 @@ a, a:visited {
 #splash_header a, #splash_header a:visited {
   color: #fff;
 }
+@media screen and (max-width: 768px) {
+  #splash_header {
+    font-size: 0.6em;
+  }
+}
 
 h2 {
   font-size: 4em;
@@ -482,8 +487,12 @@ section h3 {
 }
 @media screen and (max-width: 768px) {
   #snapshot {
-    font-size: 1.1em;
+    font-size: 0.4em;
   }
+}
+
+#get_involved {
+  padding: 1em;
 }
 
 #coming_soon {
