@@ -1,12 +1,12 @@
 ## Canada.ca Analytics Experimental Dashboard
 
-A collaborationby CSPS-DIS to create a sweet government website analytics dashboard using hockey sticks and pucks that were nearby.
+An alpha collaboration by CSPS Digital Academy to create a sweet government website analytics dashboard using hockey sticks and pucks that were nearby. This is a work in progress.
 
 ### Getting/Refreshing the Data
 
-Our friends in GoC built a great analytics page `https://www.canada.ca/en/analytics.html`. So did our friends to the south `https://analytics.usa.gov`. We liked them both so much we felt they belonged together, so through the magic of open source and coffee we built this experiment. It's like a toque. Something nice and fuzzy you put ontop of your thinking bits. 
+Our friends in GoC built a great analytics page `https://www.canada.ca/en/analytics.html`. So did our friends to the south `https://analytics.usa.gov`. We liked them both so much we felt they belonged together, so through the magic of open source and coffee we built this experiment. It's like a toque. Something nice and fuzzy you put on top of your thinking bits. 
 
-The exisiting analytics page collects data from a few sites, but we thought maybe if they had a superhero cape they could wear (without having to give up on the clark kent glasses because there are probably design decisions or requirements we dont know about). But why not have both?
+The exisiting analytics page collects data from a few sites, but we thought maybe if they had a superhero cape they could wear (without having to give up on the clark kent glasses because there are probably design decisions or requirements we dont know about) it would be great. But why not have both?
 
 A small python script gca-scrape.py grabs and finds the important content from our existing analytics site and generates JSON files which can conform to the expected input of the usa.gov code. The exisiting analytics site goes on without a hiccup and we can build a cool dashboard right from its content.
 
