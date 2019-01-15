@@ -85,6 +85,9 @@ a, a:visited {
   a, a:visited {
     color: $white;
   }
+  @include media($small-screen) {
+    font-size:0.6em;
+  }
 }
 
 h2 {
@@ -355,10 +358,13 @@ section {
     font-weight: 300;
   }
   @include media($small-screen)  {
-    font-size: 1.1em;
+    font-size: 0.4em;
   }
 }
 
+#get_involved {
+  padding: 1em;
+}
 
 #coming_soon {
   position: absolute;
