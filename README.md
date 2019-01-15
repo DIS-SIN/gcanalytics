@@ -35,12 +35,6 @@ This will create the css files you need. When your testing is done, move htem in
 * Assuming you have make, to watch the Sass source for changes and build the stylesheets automatically, run:
 
 ```bash
-gem install sass
-```
-
-* To watch the Sass source for changes and build the stylesheets automatically, run:
-
-```bash
 make watch
 ```
 
