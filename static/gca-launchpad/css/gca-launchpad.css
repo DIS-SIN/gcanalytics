@@ -10,7 +10,14 @@ h1 {
   font-family: "Open Sans", Helvetica, arial, sans-serif;
   padding:1em;
   font-weight: 600;
+  font-size: 36px;
 }
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+
 .splash_link {
   font-weight: 300;
   text-decoration: none;
@@ -21,7 +28,12 @@ h1 {
   color: red !important;
 }
 h1 span {
-	font-size: 0.3em;
-	display: block;
-	padding: 1em;
+  font-size: 0.5em;
+  display: block;
+  padding: 1em;
+}
+@media screen and (max-width: 768px) {
+  h1 span {
+    font-size: 0.3em;
+  }
 }

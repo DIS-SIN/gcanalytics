@@ -5,9 +5,9 @@ $(function() {
 
 	var reports = {
 		"report_names": [
-			"downloads-en",//"downloads-fr",
-			"pages-en",//"pages-fr",
-			"videos-en",//"videos-fr"
+			"downloads-en","downloads-fr",
+			"pages-en","pages-fr",
+			"videos-en","videos-fr"
 		],
 		"report_to_icon": {
 			"downloads-en":"cloud-download","downloads-fr":"cloud-download",

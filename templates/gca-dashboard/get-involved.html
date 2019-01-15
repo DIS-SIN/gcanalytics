@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Analytics | Canada.ca</title>
+    <title>alpha | gcanalytics | The Canadian government's web traffic (alpha).</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-    <link rel="stylesheet" href="../css/public_analytics.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='gca-dashboard/css/public_analytics.css')}}">
 
     <!--[if lte IE 9]>
     <script src="js/vendor/aight.v2.min.js"></script>
@@ -17,19 +17,17 @@
 
     <header id="splash_header">
       <div class="header_container">
-        <h1>gcanalytics | <a href="http://www.canada.ca">canada.ca</a></h1>
+        <h1><a href="{{url_for('gca-dashboard.render_dash')}}">alpha</a> | gcanalytics | <a href="http://www.canada.ca">canada.ca</a></h1>
       </div>
       <div id="color_bar"></div>
     </header>
 
-    <div class="container">
-
-      <section id="agencies">
+    <div class="get_involved">
 
         <h1>Let's do this together - we need your data</h1>
 
         <p>
-          The hard part isn't the dashboard. The hard part is an organizational challenge. We need to standardize on one analytics platform across the board and get each page setup with the appropriate trackers. If we can do that, we will have one complete singular picture of how canadians access government content. With that... <strong>the potential is big</strong>. Organize content by what actually is needed. Provide quick suggestions for related items. Tailor content to regional needs. With the right data you can move mountains.
+          The hard part isn't the dashboard. The hard part is an organizational challenge. We need to standardize on one analytics platform across the board and get each page setup with the appropriate trackers. If we can do that, we will have one complete singular picture of how Canadians access government content. With that... <strong>the potential is big</strong>. Organize content by what actually is needed. Provide quick suggestions for related items. Tailor content to regional needs. With the right data you can move mountains.
         </p>
 
         <p>
@@ -38,7 +36,7 @@
 
         <ul>
           <li>
-            An digital strategy lead will identify a point of contact (POC) who will manage their web analytics account.
+            A digital strategy lead will identify a point of contact (POC) who will manage their web analytics account.
           </li>
           <li>
             Groups will work together to register their sites and work with them to implement the common page tag code.
@@ -49,10 +47,11 @@
         </ul>
 
         <p>
-          Let's disrupt canada.ca analytics in a good way. The more we know about how Canadians are using the content, the better we can serve them. Get in touch with CSPS DIS today.
+          Let's disrupt government web analytics in a good way. The more we know about how Canadians are using the content, the better we can serve them. Get in touch with CSPS Digital Academy today.
         </p>
-
-      </section>
+        <p>
+          You can also check out our <a href="https://github.com/CSPS-EFPC-DAAN">GitHub profile for more goodies</a>
+        </p>
 
     </div>
   </body>
