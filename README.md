@@ -8,12 +8,12 @@ Our friends in GoC built a great analytics page `https://www.canada.ca/en/analyt
 
 The experimental apps here are built on the following stack:
 
-* The dashboard uses HTML, SASS/CSS, JS, D3 and the launchpad uses HTML, JS, CSS, jQuery, Metro4
+* The dashboard uses HTML, [SASS](http://sass-lang.com/), JS, [D3](https://d3js.org/) and the launchpad uses HTML, JS, CSS, [jQuery](https://jquery.com/), [Metro4](https://metroui.org.ua/index.html)
 * The data is all JSON files, we harvest the data from our exisiting analytics site with Python 3
-* The server-side an Azure cloud running an Ubuntu VM, Python 3, Flask, and nginx
-* We automate our deploys with crontab and pm2
+* The server-side is an [Azure](https://azure.microsoft.com/en-ca/) cloud running an [Ubuntu VM](https://www.ubuntu.com/), [Python 3](https://www.python.org/downloads/release/python-370/), [Flask](http://flask.pocoo.org/), and [nginx](https://www.nginx.com/)
+* We automate our deploys with crontab and [pm2](https://pm2.io/doc/)
 
-Note: The hard part here really isn't the dashboard or apps we can build with the data - the hard part is getting everyone standardized on one tracking system across the whole landscape. This is an orginizational challenge which will need the help a many talented folks across GoC. We just wanted to demo what we can do if we had this content in easily usable forms. It's easier to share a vision when you can touch and see something. We hope this inspires you too.
+> Note: The hard part here really isn't the dashboard or apps we can build with the data - the hard part is getting everyone standardized on one tracking system across the whole landscape. This is an orginizational challenge which will need the help a many talented folks across GoC. We just wanted to demo what we can do if we had this content in easily usable forms. It's easier to share a vision when you can touch and see something. We hope this inspires you too.
 
 ### Getting/Refreshing the Data
 
@@ -30,7 +30,7 @@ cd wheremystufflives/development/gcanalytics/gca-scrape/
 gca-scrape.py
 ```
 
-This will write the data files into the data/can-live/ directory of the dashboard
+This will write the data files into the data/can-live/ directory of the dashboard. In the live version of the dashboard we schedule a small cron job to get our data on a schedule. 
 
 ### Building the Stylesheets
 
@@ -137,7 +137,9 @@ wkhtmltopdf -s "Letter" -O "Landscape" http://localhost:8000/gcanalytics/gca-das
 wkhtmltoimage http://localhost:8000/gcanalytics/gca-dashboard/demo/ gcanalytics.png
 ```
 
-The assets should appear in the demo folder and you can use them how you like. Note: Depending on the charts you use, you may run into svg issues. But this isn't a core part of our experiment, just an example that you could generate reports/assets that you can share with folks who dont want the web-enabled version.
+The assets should appear in the demo folder and you can use them how you like. 
+
+Note: Depending on the charts you use, you may run into svg issues. But this isn't a core part of our experiment, just an example that you could generate reports/assets that you can share with folks who dont want the web-enabled version.
 
 ### Public domain
 
