@@ -11,4 +11,4 @@ def create_app():
 	    return redirect(url_for('gca-dashboard.render_dash'))
     return app
 app = create_app()
-app.run()
+app.run(host = '0.0.0.0', port=5053)
