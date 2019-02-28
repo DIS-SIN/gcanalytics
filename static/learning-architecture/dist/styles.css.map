@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./node_modules/react-tree-graph/dist/node_modules/react-tree-graph/dist/style.css"],"names":[],"mappings":";AAAA,aACC,UAAW,CACX,YAAa,CACb,UAGA,SAAU,CACV,YAAa","file":"styles.css","sourcesContent":[".node circle {\r\n\tfill: white;\r\n\tstroke: black;\r\n}\r\n\r\npath.link {\r\n\tfill: none;\r\n\tstroke: black;\r\n}"],"sourceRoot":""}
