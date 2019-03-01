@@ -1,0 +1,144 @@
+html,
+body {
+    background-color: rgb(62, 66, 85);
+    height:100%;
+    width:100%;
+    background-image: url('../images/sp-bg-12.jpg');
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    background-color: rgb(62, 66, 85);
+    margin: 0;
+    padding: 0;
+}
+
+div.centercontainer {
+    height: 10em;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+div.centercontainer .centerthis {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.ilt {
+    font-family: "Arial", sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 85px;
+}
+
+.iltsmall {
+    font-family: "Arial", sans-serif;
+    font-size: 1em;
+    color: white;
+}
+
+.lds-ripple {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+}
+
+.lds-ripple div {
+    position: absolute;
+    border: 4px solid #dfc;
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+}
+
+@keyframes lds-ripple {
+    0% {
+    top: 28px;
+    left: 28px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+    }
+
+    100% {
+    top: -1px;
+    left: -1px;
+    width: 58px;
+    height: 58px;
+    opacity: 0;
+    }
+}
+
+.fade-enter {
+    opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}
+
+.transition-group {
+  position: relative;
+}
+.route-section {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* DOL Explore Tree Style */
+div.custom-container {
+    background-color: #242424;
+    text-align: center;
+}
+
+svg.custom {
+    background-color: #242424;
+}
+
+svg.custom .node circle {
+	fill: #F3F3FF;
+	stroke: #2593B8;
+	stroke-width: 1.5px;
+}
+
+svg.custom .node text {
+	font-size: 14px;
+	background-color: #444;
+	fill: #F4F4F4;
+    text-shadow: 0 1px 4px black;
+    font-family: 'Roboto','Helvetica','Arial';
+}
+
+svg.custom .node {
+	cursor: pointer;
+}
+
+svg.custom path.link {
+	fill: none;
+	stroke: #2593B8;
+	stroke-width: 1.5px;
+}
+
